@@ -1,6 +1,6 @@
 public class Main {
 
-    // 1
+    // 1 
     // Java > Array-1 > firstLast6
     //
     // Given an array of ints, return true if 6 appears as either the first or
