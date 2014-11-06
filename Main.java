@@ -1,6 +1,6 @@
 public class Main {
 
-    // 1 
+    // 1
     // Java > Array-1 > firstLast6
     //
     // Given an array of ints, return true if 6 appears as either the first or
@@ -11,10 +11,8 @@ public class Main {
     // firstLast6({13, 6, 1, 2, 3}) > false
 
     public boolean firstLast6(int[] nums) {
-        if ((nums[0] == 6) || (nums[nums.length - 1] == 6))
-            return true;
-        else
-            return false;
+        return ((nums[0] == 6) || (nums[nums.length - 1] == 6));
+
     }
 
     // 2
@@ -30,10 +28,8 @@ public class Main {
     // commonEnd({1, 2, 3}, {1, 3}) > true
 
     public boolean commonEnd(int[] a, int[] b) {
-        if ((a[0] == b[0]) || (a[a.length - 1] == b[b.length - 1]))
-            return true;
-        else
-            return false;
+        return ((a[0] == b[0]) || (a[a.length - 1] == b[b.length - 1]));
+
     }
 
     // 3
@@ -45,10 +41,8 @@ public class Main {
     // sameFirstLast({1, 2, 1}) > true
 
     public boolean sameFirstLast(int[] nums) {
-        if ((nums.length >= 1) && (nums[0] == nums[nums.length - 1]))
+        return ((nums.length >= 1) && (nums[0] == nums[nums.length - 1]));
 
-            return true;
-        return false;
     }
 
     // 4
@@ -85,7 +79,6 @@ public class Main {
     // countYZ("day fyyyz") > 2
     public int countYZ(String str) {
 
-        // char[] ss = str.toCharArray();
         int count = 0;
         for (int i = 0; i < str.length(); i++) {
             if (((Character.toLowerCase(str.charAt(i)) == 'y') || (Character
@@ -95,9 +88,6 @@ public class Main {
                 count++;
         }
 
-        // if ((Character.toLowerCase(ss[ss.length - 1]) == 'y')
-        // || (Character.toLowerCase(ss[ss.length - 1]) == 'z'))
-        // count++;
         return count;
 
     }
@@ -153,15 +143,7 @@ public class Main {
             else
                 sumRight += nums[--j];
         }
-        // for (int i = 1; i < nums.length; i++) {
-        // int sum1 = 0, sum2 = 0;
-        // for (int i1 = 0; i1 < i; i1++)
-        // sum1 += nums[i1];
-        // for (int i2 = i; i2 < nums.length; i2++)
-        // sum2 += nums[i2];
-        // if (sum1 == sum2)
-        // return true;
-        // }
+
         return (sumLeft == sumRight);
     }
 
