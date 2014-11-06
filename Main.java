@@ -106,18 +106,19 @@ public class Main {
         if (str.length() == 0)
             return true;
 
-        for (int i = 0; i < str.length(); i++)
-            if (str.charAt(i) == 'g')
+        int i = 0;
+        while (i < str.length())
+        {
+               if (str.charAt(i) == 'g')
+               {
+                   if (i == str.length()-1 || str.charAt(i+1) != 'g')
+                       return false;
 
-                if ((str.length() == 1)
-                        || ((i == 0) && (str.charAt(i + 1) != 'g'))
-                        || ((i == str.length() - 1) && (str
-                                .charAt(str.length() - 2) != 'g'))
-                        || ((i > 0) && (i < str.length() - 1)
-                                && (str.charAt(i - 1) != 'g') && (str
-                                .charAt(i + 1) != 'g')))
-                    return false;
-
+                   while(i < str.length()-1 && str.charAt(i+1) == 'g')
+                       i++;
+               }
+               i++;   
+        }
         return true;
     }
 
