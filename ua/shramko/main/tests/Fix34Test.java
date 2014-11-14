@@ -22,9 +22,9 @@ public class Fix34Test {
 		Fix34 test = new Fix34();
 		
 		//does not work now
-		assertEquals(new int[]{1, 3, 4, 1}, test.fix34(new int[] {1, 3, 1, 4}));
-		assertEquals(new int[]{1, 3, 4, 1, 1, 3, 4},test.fix34(new int[] {1, 3, 1, 4, 4, 3, 1}));
-		assertEquals(new int[]{3, 4, 2, 2},test.fix34(new int[] {3, 2, 2, 4}));
+		assertArrayEquals(new int[]{1, 3, 4, 1}, test.fix34(new int[] {1, 3, 1, 4}));
+		assertArrayEquals(new int[]{1, 3, 4, 1, 1, 3, 4},test.fix34(new int[] {1, 3, 1, 4, 4, 3, 1}));
+		assertArrayEquals(new int[]{3, 4, 2, 2},test.fix34(new int[] {3, 2, 2, 4}));
 	}
 
 }
