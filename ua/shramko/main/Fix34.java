@@ -28,4 +28,14 @@ public class Fix34 {
         return nums;
 
     }
+    
+    public static void main(String[] args) {
+		Fix34 test = new Fix34();
+		int[] i = test.fix34(new int[] {1, 3, 1, 4});
+		for (int j = 0; j < i.length; j++) {
+			System.out.println(i[j]);
+		}
+		
+		
+	}
 }
