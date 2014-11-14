@@ -1,6 +1,12 @@
-package ua.shramko.main;
+package ua.shramko.main.tests;
 
-public class GroupSum {
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import ua.shramko.main.GroupSum;
+
+public class GroupSumTest {
     // Given an array of ints, is it possible to choose a group of some of the
     // ints, such that the group sums to the given target?
     // This is a classic backtracking recursion problem. Once you understand the
@@ -15,16 +21,20 @@ public class GroupSum {
     // groupSum(0, {2, 4, 8}, 10) > true
     // groupSum(0, {2, 4, 8}, 14) > true
     // groupSum(0, {2, 4, 8}, 9) > false
-
-    public boolean groupSum(int start, int[] nums, int target) {
-    	if (start >= nums.length) return target == 0;
-        return groupSum(start + 1, nums, target - nums[start])
-                || groupSum(start + 1, nums, target);
-
-    }
-    public static void main(String[] args) {
+	@Test
+	public void test() {
 		GroupSum test = new GroupSum();
-		System.out.println(test.groupSum(0, new int[]{2, 4, 8}, 10));
+		
+		assertTrue(test.groupSum(0, new int[]{1, 2, 6}, 8));
+		assertTrue(test.groupSum(0, new int[]{2, 4, 8}, 14));
+		assertTrue(test.groupSum(0, new int[]{2, 4, 8}, 8));
+		assertTrue(test.groupSum(1, new int[]{2, 4, 8}, 8));
+		assertTrue(test.groupSum(0, new int[]{10, 2, 2, 5}, 15));
+		
+		assertFalse(test.groupSum(1, new int[]{2, 4, 8}, 2));
+		assertFalse(test.groupSum(0, new int[]{9}, 1));
+		assertFalse(test.groupSum(0, new int[]{2, 4, 8}, 9));
+
 	}
-    
+
 }
