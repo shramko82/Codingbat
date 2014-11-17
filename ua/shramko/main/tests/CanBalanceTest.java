@@ -17,6 +17,7 @@ public class CanBalanceTest {
 		
 		assertFalse(cb.canBalance(new int[] { 13, 6, 1, 2, 3 }));
 		assertFalse(cb.canBalance(new int[] { 15, 1, 1, 2, 3 }));
+		assertFalse(cb.canBalance(new int[] {  }));
 	}
 
 }

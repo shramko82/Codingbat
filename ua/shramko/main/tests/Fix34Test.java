@@ -21,7 +21,7 @@ public class Fix34Test {
 	public void test() {
 		Fix34 test = new Fix34();
 		
-		//does not work now
+		
 		assertArrayEquals(new int[]{1, 3, 4, 1}, test.fix34(new int[] {1, 3, 1, 4}));
 		assertArrayEquals(new int[]{1, 3, 4, 1, 0, 3, 4,1},test.fix34(new int[] {1, 3, 1, 4, 0, 3, 1, 4}));
 		assertArrayEquals(new int[]{3, 4, 2, 2},test.fix34(new int[] {3, 2, 2, 4}));
