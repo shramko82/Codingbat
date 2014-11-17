@@ -27,7 +27,7 @@ public class Scores100Test {
 		assertFalse(test.scores100( new int[]{1, 100, 99, 100}));
 		assertFalse(test.scores100( new int[]{100, 50, 100, 99}));
 		assertFalse(test.scores100( new int[]{-1, 0, 100}));
-		
+		assertFalse(test.scores100( new int[]{100}));
 	}
 
 }

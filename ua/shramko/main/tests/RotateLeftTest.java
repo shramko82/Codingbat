@@ -28,6 +28,7 @@ public class RotateLeftTest {
 				test.rotateLeft3(new int[] {56,58,55}));
 		assertArrayEquals(new int[]{1,1,1},
 				test.rotateLeft3(new int[] {1,1,1}));
+
 		
 	}
 

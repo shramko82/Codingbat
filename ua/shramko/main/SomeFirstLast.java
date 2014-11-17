@@ -9,6 +9,7 @@ public class SomeFirstLast {
     // sameFirstLast({1, 2, 1}) > true
 
     public boolean sameFirstLast(int[] nums) {
+
         return ((nums.length >= 1) && (nums[0] == nums[nums.length - 1]));
 
     }

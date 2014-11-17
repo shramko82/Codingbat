@@ -8,6 +8,8 @@ public class Scores100 {
     // scores100({1, 100, 99, 100}) > false
     // scores100({100, 1, 100, 100}) > true
     public boolean scores100(int[] scores) {
+    	if (scores.length < 2)
+    		return false;
         for (int i = 1; i < scores.length; i++)
             if (scores[i - 1] == 100 && scores[i] == 100)
                 return true;

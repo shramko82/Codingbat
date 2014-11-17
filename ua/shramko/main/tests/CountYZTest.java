@@ -28,6 +28,7 @@ public class CountYZTest {
 		assertEquals(1, test.countYZ("days fyyyz"));
 		assertEquals(3, test.countYZ("zui zoo fooz yay yyyyyyyyy"));
 		assertEquals(3, test.countYZ("fez@day_lolz>"));
+		assertEquals(0, test.countYZ(""));
 	}
 
 }

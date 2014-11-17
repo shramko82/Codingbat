@@ -11,6 +11,8 @@ public class SeriesUp {
     // seriesUp(2) > {1, 1, 2}
 
     public int[] seriesUp(int n) {
+    	if (n < 0)
+    		return null;
         int[] array = new int[n * (n + 1) / 2];
         int num = 0;
         for (int i = 1; i <= n; i++) {

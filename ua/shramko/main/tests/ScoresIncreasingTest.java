@@ -27,6 +27,7 @@ public class ScoresIncreasingTest {
 		assertFalse(test.scoresIncreasing( new int[]{1, 3, 2}));
 		assertFalse(test.scoresIncreasing( new int[]{2, 4, 5, 1}));
 		assertFalse(test.scoresIncreasing( new int[]{0,0,0,-1}));
+		assertFalse(test.scoresIncreasing( new int[]{}));
 	}
 
 }

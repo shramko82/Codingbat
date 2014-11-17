@@ -16,6 +16,7 @@ public class FactorialTest {
 		assertEquals(720, test.factorial(6));
 		assertEquals(24,test.factorial(4));
 		assertEquals(1,test.factorial(1));
+		assertEquals(-1,test.factorial(-1));
 	}
 
 }

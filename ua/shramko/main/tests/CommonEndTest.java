@@ -28,6 +28,7 @@ public class CommonEndTest {
 		assertFalse(test.commonEnd(new int[]{1, 2, 3}, new int[]{7, 3, 2}));
 		assertFalse(test.commonEnd(new int[]{2, 2, 2}, new int[]{1, 2, 3}));
 		assertFalse(test.commonEnd(new int[]{3, 3, 3}, new int[]{7, 3, 2}));
+		assertFalse(test.commonEnd(new int[]{}, new int[]{}));
 		
 	}
 

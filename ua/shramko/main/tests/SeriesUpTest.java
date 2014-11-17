@@ -28,6 +28,9 @@ public class SeriesUpTest {
 
 		assertArrayEquals(new int[]{},
 				test.seriesUp(0));
+		assertEquals(null,
+				test.seriesUp(-1));
+		
 	}
 
 }

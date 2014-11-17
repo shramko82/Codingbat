@@ -27,6 +27,7 @@ public class FirstLast6Test {
 		assertFalse(test.firstLast6(new int[]{2, 6, 2}));
 		assertFalse(test.firstLast6(new int[]{3, 6, 3}));
 		assertFalse(test.firstLast6(new int[]{66, 6, 66}));
+		assertFalse(test.firstLast6(new int[]{}));
 	}
 
 }

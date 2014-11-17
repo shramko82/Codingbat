@@ -29,6 +29,7 @@ public class scoresClumpTest {
 		assertFalse(test.scoresClump( new int[]{3, 4, 6}));
 		assertFalse(test.scoresClump( new int[]{2, 4, 5, 7}));
 		assertFalse(test.scoresClump( new int[]{3, 3, 6, 7, 9}));
+		assertFalse(test.scoresClump( new int[]{}));
 	}
 
 }

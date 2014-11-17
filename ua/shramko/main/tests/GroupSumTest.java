@@ -30,10 +30,12 @@ public class GroupSumTest {
 		assertTrue(test.groupSum(0, new int[]{2, 4, 8}, 8));
 		assertTrue(test.groupSum(1, new int[]{2, 4, 8}, 8));
 		assertTrue(test.groupSum(0, new int[]{10, 2, 2, 5}, 15));
+		assertTrue(test.groupSum(0, new int[]{}, 0));
 		
 		assertFalse(test.groupSum(1, new int[]{2, 4, 8}, 2));
 		assertFalse(test.groupSum(0, new int[]{9}, 1));
 		assertFalse(test.groupSum(0, new int[]{2, 4, 8}, 9));
+		
 
 	}
 
