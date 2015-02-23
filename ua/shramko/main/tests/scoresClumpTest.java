@@ -4,7 +4,6 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import ua.shramko.main.Scores100;
 import ua.shramko.main.ScoresClump;
 
 public class scoresClumpTest {

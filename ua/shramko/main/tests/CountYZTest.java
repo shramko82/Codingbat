@@ -4,7 +4,6 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import ua.shramko.main.CommonEnd;
 import ua.shramko.main.CountYZ;
 
 // Given a string, count the number of words ending in 'y' or 'z' -- so the
