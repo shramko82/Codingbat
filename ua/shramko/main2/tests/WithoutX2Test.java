@@ -4,7 +4,6 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import ua.shramko.main2.ComboString;
 import ua.shramko.main2.WithoutX2;
 
 public class WithoutX2Test {
