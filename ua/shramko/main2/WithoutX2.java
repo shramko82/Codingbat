@@ -10,9 +10,9 @@ public class WithoutX2 {
 //			withoutX2("Hxi") → "Hi"
 //			withoutX2("Hi") → "Hi"
 	
-	public static String withoutX2(String str) {
+	public String withoutX2(String str) {
 		if (str == null) {
-			System.err.println("Inrut string should not be null");
+			System.err.println("Input string should not be null");
 			return null;
 		}
 		
@@ -24,8 +24,5 @@ public class WithoutX2 {
 		}
 		return str; 
 	}
-	public static void main(String[] args) {
-		withoutX2("Hxi");
-	}
-	
+
 }
