@@ -13,10 +13,7 @@ package ua.shramko.main2;
 public class MakeBricks {
 	public boolean makeBricks(int small, int big, int goal) {
 		if (goal == 0) {
-			if ((small == 0)&&(big == 0))
-				return true;
-			else 
-			return false;
+			return true;
 		}
 		int currentLine = 0;
 		if (big >= 0) {
