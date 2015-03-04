@@ -5,7 +5,6 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 import ua.shramko.main2.Array667;
-import ua.shramko.main2.ComboString;
 
 public class Array667Test {
 
