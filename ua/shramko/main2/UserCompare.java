@@ -16,9 +16,9 @@ userCompare("bb", 1, "bb", 1) → 0*/
 
 public class UserCompare {
 	public int userCompare(String aName, int aId, String bName, int bId) {
-		
-		
-		
-		  
+		int result = aName.compareTo(bName);
+		result = (result == 0) ? (aId-bId) : (result);
+
+		return (result == 0) ? result : result/Math.abs(result);  
 	}
 }
