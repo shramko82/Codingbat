@@ -5,7 +5,6 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 import ua.shramko.main2.LuckySum;
-import ua.shramko.main2.SumLimit;
 
 public class LuckySumTest {
 
