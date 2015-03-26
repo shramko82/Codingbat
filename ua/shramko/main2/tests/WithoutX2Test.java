@@ -20,7 +20,6 @@ public class WithoutX2Test {
 		assertEquals("", test.withoutX2("x"));
 		assertEquals("", test.withoutX2("xx"));
 		assertEquals("", test.withoutX2(""));
-		assertEquals(null, test.withoutX2(null));
 	}
 
 }

@@ -11,11 +11,6 @@ public class WithoutX2 {
 //			withoutX2("Hi") → "Hi"
 	
 	public String withoutX2(String str) {
-		if (str == null) {
-			System.err.println("Input string should not be null");
-			return null;
-		}
-		
 		if ((str.length() > 1) && (str.charAt(1) == 'x'))  {
 			str = str.substring(0, 1)+str.substring(2, str.length());
 		}
